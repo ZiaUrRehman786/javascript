@@ -10,10 +10,6 @@ app.get('/add', function (req, res) {
   res.send(leftPad(String(a + b), 20, '0'));
 });
 
-// app.get('/add', function (req, res) {
-//     res.send(leftPad(String(a + b), 20, '0'));
-// });
-
 app.get('/multiply', function (req, res) {
   const a = parseInt(req.query.a, 10);
   const b = parseInt(req.query.b, 10);
